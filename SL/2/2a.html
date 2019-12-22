@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping App</title>
+</head>
+<body>
+    <form name="form" >
+        <fieldset>
+            
+            Enter Item Name<input type="text" name="name" required>
+            
+            <br>
+            <br>
+
+            Select the price:<select id="price" >
+                <option value="5">Rs 5</option>
+                <option value="10">Rs 10</option>
+                <option value="15">Rs 15</option>
+            </select>
+            
+            <br>
+
+        Select Quantity:<input name="quantity" type="number" min="0">
+
+        </fieldset>
+    </form>
+
+    <input type="submit" value="Buy" onclick="buy()">
+
+    Total costs is:<span>Rs 0</span>
+
+    <script>
+        var select=document.getElementById('price');
+
+        function buy(){
+            var amt=select.options[select.selectedIndex].value;
+            var quan=form["quantity"].value;
+
+            if(quan<0 || quan >10)
+                alert("Quantity should be between 0-10");
+
+            else{
+                var total=amt*quan;
+                document.querySelector('span').innerHTML=total;
+            }
+            
+        }
+    </script>
+</body>
+</html>

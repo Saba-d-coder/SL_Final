@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM APP</title>
+</head>
+<body>
+    
+    Your balance is {{bal}}
+    {{msg}}
+
+    <form action="{{url_for('index')}}" method="POST">
+        Amount<input type="number" name="amount" required>
+        <input type="submit" name="action" value="withdraw">
+        <input type="submit" name="action" value="deposit">
+    </form>
+   
+</body>
+</html>
