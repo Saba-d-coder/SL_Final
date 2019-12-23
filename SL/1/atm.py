@@ -1,5 +1,4 @@
 from flask import Flask,request,render_template,url_for,redirect,session
-import time
 
 app=Flask(__name__)
 
