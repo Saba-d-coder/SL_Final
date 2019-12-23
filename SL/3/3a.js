@@ -3,24 +3,24 @@ window.onload=()=>{
         {
             "name":"KSK",
             "country":"India",
-            "year":"1996",
+            "year":"2050",
             "title":"The Hell"
         },
         {
-            "name":"Khan",
-            "country":"India",
+            "name":"Violet Evergarden",
+            "country":"Japan",
             "year":"2020",
-            "title":"The Death of All"
+            "title":"Doll"
         }, {
-            "name":"Saba",
-            "country":"India",
+            "name":"Erie",
+            "country":"Japan",
             "year":"2030",
             "title":"Fiendship"
         }, {
-            "name":"Khanum",
-            "country":"India",
-            "year":"1998",
-            "title":"The Crime"
+            "name":"Midoriya",
+            "country":"Japan",
+            "year":"2020",
+            "title":"One for all"
         }
 
     ]

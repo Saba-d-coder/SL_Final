@@ -3,7 +3,7 @@ import time
 
 app=Flask(__name__)
 
-app.secret_key="Secret1"
+app.secret_key="Secret"
 
 @app.route("/",methods=['POST','GET'])
 def index():

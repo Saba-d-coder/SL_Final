@@ -2,7 +2,6 @@ import pandas as pd
 from pandas import DataFrame,Series
 import seaborn as sb
 import matplotlib.pyplot as plt
-import numpy as np
 
 data=pd.read_csv('iris.csv')
 

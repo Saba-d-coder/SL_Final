@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Std Details</title>
+</head>
+<body>
+    
+    <form action="{{url_for('index')}}" method="POST" name="form">
+        USN:<br>
+        <input type="text" name="usn" placeholder="Enter USN">
+
+        <br>
+        DOB: <br>
+        <input type="text" name="dob">
+
+        <br>
+        Subject 1 marks:<input type="number" name="m1" min="0" max="100">
+
+        <br>
+        Subject 2 marks:<input type="number" name="m2" min="0" max="100">
+
+        <br>
+        Subject 3 marks:<input type="number" name="m3" min="0" max="100">
+
+        <br>
+        <input type="submit" onclick="validate()">
+    </form>
+
+    {{res}}
+
+    <script>
+        function validate(){
+            if(form.usn.value == "" || form.dob.value == "" || form.m1.value == "" || form.m2.value == "" || form.m3.value == "")
+                alert("All fields are required")
+        }
+    </script>
+</body>
+</html>

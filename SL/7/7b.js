@@ -29,8 +29,7 @@ window.onload=()=>{
     })
 
     cars.forEach(function(item,index){
-        s=document.getElementById(item.name)
-        s.onmouseover=(function(){
+        document.getElementById(item.name).onmouseover=(function(){
                 document.getElementById('detail').removeAttribute('hidden')
                 document.getElementById(item.name).style.backgroundColor='pink'
                 document.getElementById('name').innerHTML=item.model
@@ -39,7 +38,7 @@ window.onload=()=>{
                 document.getElementById('yr').innerHTML=item.year           
         })
 
-        s.onmouseout=function(){
+        document.getElementById(item.name).onmouseout=function(){
             car=item
             if(item){
                 document.getElementById(item.name).style.backgroundColor='blueviolet'
