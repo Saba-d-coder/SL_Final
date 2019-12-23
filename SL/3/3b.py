@@ -24,7 +24,7 @@ print("Length of all words are:",list,"\n")
 sum=reduce((lambda x,y:x+y),list)
 print("Average is:",sum/len(list),"\n")
 
-print("Sqaures are:",[x*x for x in list if x%2!=0])
+print("Squares are:",[x*x for x in list if x%2!=0])
 
 
 
