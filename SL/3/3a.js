@@ -25,7 +25,7 @@ window.onload=()=>{
 
     ]
 
-    obj.forEach(function dothis(item,index){
+    obj.forEach(function(item,index){
         if(index<=1){
             var table=document.createElement('tr')
             
