@@ -27,7 +27,8 @@
         </fieldset>
     </form>
 
-    <input type="submit" value="Buy" onclick="buy()">
+    <input type="submit" value="Proceed" onclick="buy()">
+    <button id="pay" onclick="paid()">Pay</button>
 
     Total costs is:<span>Rs 0</span>
 
@@ -44,9 +45,13 @@
             else{
                 var total=amt*quan;
                 document.querySelector('span').innerHTML=total;
-            }
-            
+            } 
         }
+
+        function paid(){
+            alert("Paid")
+        }
+
     </script>
 </body>
 </html>
