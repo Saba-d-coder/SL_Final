@@ -1,5 +1,4 @@
 import pandas as pd
-from pandas import DataFrame,Series
 import seaborn as sb
 import matplotlib.pyplot as plt
 
@@ -15,5 +14,5 @@ data['parental level of education']=data['parental level of education'].fillna('
 
 print(data['parental level of education'])
 
-sb.countplot(x='gender',hue='test preparation course',data=data)
+sb.countplot(hue='gender',x='test preparation course',data=data)
 plt.show()
